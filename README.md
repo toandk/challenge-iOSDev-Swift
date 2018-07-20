@@ -2,7 +2,7 @@ AudioNote - Swift version
 ================
 This is a simple iPhone app allows user to record audio and transcribes it to text. A location is captured for each note.
 
-#Note: 
+### Note: 
 For Objective-C version, please looking at [here](https://github.com/toandk/challenge-iOSDev)
 
 Main features:
@@ -38,11 +38,6 @@ Install Cocoapods libraries
 pod install
 ```
 Open `NoteSwift.xcworkspace` and Run (CMD + R)
-
-### Testing
-Open workspace on XCode and run test (CMD + U).
-
-There are some unit tests and can be deployed into a CI server.
 
 ### Crash report
 Show on [fabric.io Crashlytics](https://fabric.io/tdktest/ios/apps/com.tdk.noteaudio/issues?time=last-seven-days&event_type=crash&subFilter=state&state=open)
