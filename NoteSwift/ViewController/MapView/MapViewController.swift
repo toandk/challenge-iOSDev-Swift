@@ -42,6 +42,11 @@ class MapViewController: BaseViewController, GMSMapViewDelegate {
             bounds = bounds.includingCoordinate(marker.position)
         }
         myMapView.animate(with: GMSCameraUpdate.fit(bounds, withPadding: 30.0))
+        if self.viewModel.listNote.count == 1 {
+            let note = viewModel.listNote[0]
+            let location = CLLocationCoordinate2DMake(note.latitude, note.longitude)
+            centerMap(coordinate: location)
+        }
     }
     
     func mapView(_ mapView: GMSMapView, didTapInfoWindowOf marker: GMSMarker) {
