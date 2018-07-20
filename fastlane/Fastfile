@@ -34,7 +34,7 @@ platform :ios do
     # match(git_url: "git@bitbucket.org:toandk/certificates.git",
     #   type: "adhoc",
     #   app_identifier: "toandk.maprouting")
-    gym(export_method: 'enterprise', scheme: "audionote")
+    gym(export_method: 'enterprise', scheme: "NoteSwift")
     crashlytics(
       api_token: "bcae5cb6b9b76c0a3ef31e5f616f43663276f0e2",
       build_secret: "0e3e004dd119708ea629b6c8bcac653866c3095bca7d6534f474b749c67eae11",

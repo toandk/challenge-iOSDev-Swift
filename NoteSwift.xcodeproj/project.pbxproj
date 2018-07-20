@@ -791,7 +791,8 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = NoteSwift/NoteSwift.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: TRUST CIRCLE VIETNAM COMPANY LIMITED";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = LT5B79L8T7;
 				INFOPLIST_FILE = NoteSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -801,6 +802,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tdk.noteaudio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f01c1e13-915b-4170-80f6-c0d48c63d627";
+				PROVISIONING_PROFILE_SPECIFIER = "note audio inhouse";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -813,7 +816,8 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = NoteSwift/NoteSwift.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: TRUST CIRCLE VIETNAM COMPANY LIMITED";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = LT5B79L8T7;
 				INFOPLIST_FILE = NoteSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -823,6 +827,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tdk.noteaudio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f01c1e13-915b-4170-80f6-c0d48c63d627";
+				PROVISIONING_PROFILE_SPECIFIER = "note audio inhouse";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -834,7 +840,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
 				CODE_SIGN_ENTITLEMENTS = messenger/messenger.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = LT5B79L8T7;
 				INFOPLIST_FILE = messenger/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -845,6 +852,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tdk.noteaudio.messenger2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "eabcce77-f969-4ba9-a4ee-bf7b6691aa55";
+				PROVISIONING_PROFILE_SPECIFIER = "messenger noteaudio inhouse";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -857,7 +866,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
 				CODE_SIGN_ENTITLEMENTS = messenger/messenger.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = LT5B79L8T7;
 				INFOPLIST_FILE = messenger/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -868,6 +878,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tdk.noteaudio.messenger2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "eabcce77-f969-4ba9-a4ee-bf7b6691aa55";
+				PROVISIONING_PROFILE_SPECIFIER = "messenger noteaudio inhouse";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
