@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="75" id="XDg-WP-q59" customClass="NoteTableViewCell" customModule="NoteSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XDg-WP-q59" id="3SE-mD-avP">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="74.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4c-fU-pxO">
+                        <rect key="frame" x="16" y="12" width="50" height="50"/>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="lUM-qX-XE7"/>
+                            <constraint firstAttribute="width" constant="50" id="tiA-1t-9C7"/>
+                        </constraints>
+                        <state key="normal" title="Play"/>
+                        <connections>
+                            <action selector="playAction:" destination="XDg-WP-q59" eventType="touchUpInside" id="nCO-4Y-neX"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6nL-jt-jRw">
+                        <rect key="frame" x="82" y="27" width="222" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="bjg-ho-ize"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0qh-65-BJF">
+                        <rect key="frame" x="0.0" y="73.5" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.80784313730000001" green="0.80784313730000001" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="fJz-i3-LyZ"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6nL-jt-jRw" firstAttribute="centerY" secondItem="3SE-mD-avP" secondAttribute="centerY" id="4HG-Y5-lOO"/>
+                    <constraint firstItem="6nL-jt-jRw" firstAttribute="trailing" secondItem="3SE-mD-avP" secondAttribute="trailingMargin" id="F5s-i2-fBb"/>
+                    <constraint firstItem="s4c-fU-pxO" firstAttribute="leading" secondItem="3SE-mD-avP" secondAttribute="leadingMargin" id="S78-lL-LEU"/>
+                    <constraint firstAttribute="bottom" secondItem="0qh-65-BJF" secondAttribute="bottom" id="VBN-F2-k1l"/>
+                    <constraint firstItem="0qh-65-BJF" firstAttribute="leading" secondItem="3SE-mD-avP" secondAttribute="leading" id="d0U-8o-MuT"/>
+                    <constraint firstAttribute="trailing" secondItem="0qh-65-BJF" secondAttribute="trailing" id="ic4-U3-VxE"/>
+                    <constraint firstItem="s4c-fU-pxO" firstAttribute="centerY" secondItem="3SE-mD-avP" secondAttribute="centerY" id="stf-qy-lZw"/>
+                    <constraint firstItem="6nL-jt-jRw" firstAttribute="leading" secondItem="s4c-fU-pxO" secondAttribute="trailing" constant="16" id="yT1-EE-m4d"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="nv9-vU-zas"/>
+            <connections>
+                <outlet property="noteLabel" destination="6nL-jt-jRw" id="ZQO-QO-Ofa"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="69.5"/>
+        </tableViewCell>
+    </objects>
+</document>

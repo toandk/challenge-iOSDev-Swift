@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapViewController">
+            <connections>
+                <outlet property="myMapView" destination="6jz-3r-Jvk" id="PWt-EB-y9y"/>
+                <outlet property="view" destination="SLp-SU-EAl" id="2ri-rw-iie"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="SLp-SU-EAl">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6jz-3r-Jvk" customClass="GMSMapView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6jz-3r-Jvk" firstAttribute="leading" secondItem="FKp-SB-Ngf" secondAttribute="leading" id="2kp-5f-aIc"/>
+                <constraint firstItem="6jz-3r-Jvk" firstAttribute="trailing" secondItem="FKp-SB-Ngf" secondAttribute="trailing" id="IJn-F8-Uai"/>
+                <constraint firstItem="6jz-3r-Jvk" firstAttribute="bottom" secondItem="FKp-SB-Ngf" secondAttribute="bottom" id="V3u-ls-sCe"/>
+                <constraint firstItem="6jz-3r-Jvk" firstAttribute="top" secondItem="SLp-SU-EAl" secondAttribute="top" id="lF3-g9-fCR"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="FKp-SB-Ngf"/>
+        </view>
+    </objects>
+</document>

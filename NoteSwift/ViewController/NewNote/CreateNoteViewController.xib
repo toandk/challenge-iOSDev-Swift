@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateNoteViewController">
+            <connections>
+                <outlet property="loadingView" destination="Xry-lK-rOM" id="U0x-yk-l5u"/>
+                <outlet property="photoScrollView" destination="Ayr-is-hz9" id="9fm-7Q-aIP"/>
+                <outlet property="playButton" destination="5k2-li-fW2" id="LVk-aT-pjq"/>
+                <outlet property="recordButton" destination="94n-uf-5BJ" id="Ngk-q8-Nte"/>
+                <outlet property="textView" destination="Ldu-Cc-RKZ" id="9MK-I5-kJ1"/>
+                <outlet property="view" destination="3Rk-tJ-gnU" id="dAV-ho-Ra2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="3Rk-tJ-gnU">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="94n-uf-5BJ">
+                    <rect key="frame" x="20" y="56" width="90" height="50"/>
+                    <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="BgX-Cd-MPC"/>
+                        <constraint firstAttribute="width" constant="90" id="UbY-Nq-IAD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="Record">
+                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" title="Stop">
+                        <color key="titleColor" red="0.23529411759999999" green="0.78039215689999997" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="recordAction:" destination="-1" eventType="touchUpInside" id="LCC-oi-Ltl"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ldu-Cc-RKZ">
+                    <rect key="frame" x="20" y="126" width="335" height="100"/>
+                    <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="b4y-hh-Get"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bme-uf-Vbg">
+                    <rect key="frame" x="265" y="56" width="90" height="50"/>
+                    <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="F3F-5B-xqY"/>
+                        <constraint firstAttribute="height" constant="50" id="IM8-BP-pOe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="Add image">
+                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="addMorePhotoAction:" destination="-1" eventType="touchUpInside" id="mxY-9g-1kX"/>
+                    </connections>
+                </button>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ayr-is-hz9">
+                    <rect key="frame" x="20" y="246" width="335" height="160"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="160" id="E9p-hn-SQU"/>
+                    </constraints>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5k2-li-fW2">
+                    <rect key="frame" x="147" y="56" width="80" height="50"/>
+                    <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="0Ha-h2-1Oh"/>
+                        <constraint firstAttribute="width" constant="80" id="aiv-gi-S7a"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="Play">
+                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.23529411759999999" green="0.78039215689999997" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="playAudioAction:" destination="-1" eventType="touchUpInside" id="ite-ww-hKH"/>
+                    </connections>
+                </button>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Xry-lK-rOM">
+                    <rect key="frame" x="177" y="166" width="20" height="20"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="k3y-E8-RjT" firstAttribute="trailing" secondItem="Bme-uf-Vbg" secondAttribute="trailing" constant="20" id="9rw-zm-HtT"/>
+                <constraint firstItem="Ayr-is-hz9" firstAttribute="leading" secondItem="k3y-E8-RjT" secondAttribute="leading" constant="20" id="CLr-Ek-eSC"/>
+                <constraint firstItem="5k2-li-fW2" firstAttribute="top" secondItem="k3y-E8-RjT" secondAttribute="top" constant="36" id="HG4-Y7-Fji"/>
+                <constraint firstItem="Ldu-Cc-RKZ" firstAttribute="top" secondItem="94n-uf-5BJ" secondAttribute="bottom" constant="20" id="IZP-FN-gjd"/>
+                <constraint firstItem="Ldu-Cc-RKZ" firstAttribute="leading" secondItem="k3y-E8-RjT" secondAttribute="leading" constant="20" id="KdG-xZ-Tzw"/>
+                <constraint firstItem="94n-uf-5BJ" firstAttribute="top" secondItem="k3y-E8-RjT" secondAttribute="top" constant="36" id="LNQ-yo-1J0"/>
+                <constraint firstItem="Ayr-is-hz9" firstAttribute="top" secondItem="Ldu-Cc-RKZ" secondAttribute="bottom" constant="20" id="MDf-1q-dOO"/>
+                <constraint firstItem="k3y-E8-RjT" firstAttribute="trailing" secondItem="Ldu-Cc-RKZ" secondAttribute="trailing" constant="20" id="NXV-Hu-uRX"/>
+                <constraint firstItem="Xry-lK-rOM" firstAttribute="centerY" secondItem="Ldu-Cc-RKZ" secondAttribute="centerY" id="RQ1-fw-WfF"/>
+                <constraint firstItem="k3y-E8-RjT" firstAttribute="trailing" secondItem="Ayr-is-hz9" secondAttribute="trailing" constant="20" id="UoO-ui-KJh"/>
+                <constraint firstItem="94n-uf-5BJ" firstAttribute="leading" secondItem="k3y-E8-RjT" secondAttribute="leading" constant="20" id="Ytv-n7-zw1"/>
+                <constraint firstItem="5k2-li-fW2" firstAttribute="centerX" secondItem="3Rk-tJ-gnU" secondAttribute="centerX" id="lAb-FF-jn4"/>
+                <constraint firstItem="Xry-lK-rOM" firstAttribute="centerX" secondItem="Ldu-Cc-RKZ" secondAttribute="centerX" id="wx9-td-IBW"/>
+                <constraint firstItem="Bme-uf-Vbg" firstAttribute="top" secondItem="k3y-E8-RjT" secondAttribute="top" constant="36" id="xQr-sQ-D3Z"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="k3y-E8-RjT"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>
